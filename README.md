@@ -26,7 +26,7 @@ This project uses the **Heart Disease UCI dataset** and implements an end-to-end
 
 **Data Loading → Data Cleaning → Missing Value Handling → Feature Scaling → Categorical Encoding → Model Training → Evaluation → Visualization**
 
-Two machine learning algorithms were implemented and compared:
+Two machine learning algorithms were implemented:
 
 - **Logistic Regression**
 - **Decision Tree**
@@ -54,14 +54,14 @@ The main objectives of this project are:
 - Train Logistic Regression and Decision Tree models.
 - Evaluate classification performance using multiple metrics.
 - Generate confusion matrix visualizations.
-- Generate and compare ROC curves.
+- Generate ROC curves.
 - Save model predictions and evaluation results as CSV files.
 
 ---
 
 ## 📊 Dataset
 
-The project uses the **Heart Disease UCI dataset** containing **920 patient records and 16 original columns**.
+The project uses the **Heart Disease UCI dataset**, containing **920 patient records and 16 original columns**.
 
 ### Dataset Summary
 
@@ -125,6 +125,8 @@ For binary classification, it was transformed as follows:
 Missing numerical values were replaced using the **median**.
 
 Missing categorical values were replaced using the **most frequent value**.
+
+This approach allows the models to work with incomplete records without simply deleting large portions of the dataset.
 
 ### 2. Numerical Feature Scaling
 
